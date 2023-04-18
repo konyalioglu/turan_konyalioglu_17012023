@@ -1,6 +1,17 @@
 # REPORT
-Implement of a generalized publisher and subscriber ROS package
+Implementation of a generalized publisher and subscriber ROS package
 
+## Setup
+1. Create a catkin workspace in Melodic or Noetic installed computer and run the command 
+	'''
+	https://github.com/konyalioglu/turan_konyalioglu_17012023.git
+	'''
+2. Then make the project using catkin_make or catkin build.
+
+3. In order to launch the project run the command below.
+	'''
+	roslaunch composiv_tryouts composiv_tryouts.launch
+	'''
 
 ## Repository
 
@@ -57,9 +68,9 @@ Because there should be two different node running parallel for subscriber-publi
 Lastly, a launch file is created under the composiv_tryouts/launch directory.
 
 
-After launching the package the nodes that will be run, can be seen in the ROS Node Graph.
+After launching the package, the nodes that will be run can be seen in the ROS Node Graph.
 
-![ROS Node Graph](https://github.com/konyalioglu/turan_konyalioglu_17012023/rosgraph.png)
+![ROS Node Graph](https://github.com/konyalioglu/turan_konyalioglu_17012023/blob/main/rosgraph.png)
 
 ## Code Explanation
 
