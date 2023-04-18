@@ -1,0 +1,35 @@
+<launch>
+
+  <node name="talker" pkg="composiv_tryouts" type="talker" output="screen">
+
+    <!-- An executable called talker is run as ROS node which is a part of
+         composiv_tryouts. Node is renamed as talker and output parameter
+         is set as "screen" in order to print info, warn and error message 
+         to console 
+    -->    
+
+    <param name="topic" type="str" value="/talker" />
+    <param name="rate" type="double" value="10.0" />
+    <param name="message" type="str" value="Hi" />
+
+    <!-- Topic name is defined as "/talker"
+         timer frequency is set as 10.0
+         message is  -->
+
+  </node>
+
+  <node name="listener" pkg="composiv_tryouts" type="listener" output="screen">
+
+    <!-- An executable called listener is run as ROS node which is a part of
+         composiv_tryouts. Node is renamed as listener and output parameter  
+         is set as "screen" in order to print info, warn and error message
+         to console 
+    -->
+
+    <param name="topic" type="str" value="/talker" />
+
+    <!-- the topic name to be subscribed is defined as "/talker" -->
+
+  </node>
+
+</launch>
